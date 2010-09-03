@@ -28,3 +28,21 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+
+group :test, :development do
+  gem 'rspec-rails', '= 2.0.0.beta.20'
+  gem 'shoulda'
+  gem 'factory_girl_rails'
+end
+
+group :cucumber do
+  gem 'capybara'           # better than webrat
+  gem 'database_cleaner'   # clean database between tests
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'rspec-rails', '= 2.0.0.beta.20'
+  gem 'spork'
+  gem 'launchy'            # can pop a browser with 'Then show me the page'
+  gem 'factory_girl_rails'
+end
