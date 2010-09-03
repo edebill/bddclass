@@ -1,4 +1,0 @@
-Factory.define(:article) do |f|
-  f.title "This is my title."
-  f.body "This is my body.  It is longer than my title."
-end
