@@ -34,6 +34,7 @@ group :test, :development do
   gem 'rspec-rails', '= 2.0.0.beta.20'
   gem 'shoulda'
   gem 'factory_girl_rails'
+  gem 'ruby-debug'
 end
 
 group :cucumber do
@@ -45,4 +46,5 @@ group :cucumber do
   gem 'spork'
   gem 'launchy'            # can pop a browser with 'Then show me the page'
   gem 'factory_girl_rails'
+  gem 'ruby-debug'
 end

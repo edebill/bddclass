@@ -11,7 +11,9 @@ Feature: Hello World
     Then I should see "Some title"
     And I should not see "Some body"
     And I should not see "Hello World"
-
+    And I should see awesome rounded corners
+    And I should see the list of articles
+    And I debug
 
     When I follow "Some title"
     Then I should see "Some body"

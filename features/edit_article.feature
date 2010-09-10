@@ -17,4 +17,3 @@ Feature: Editing an existing article
       Then I should be on the home page
        And I should see "Article updated"
        And I should see "Better title"
-  
