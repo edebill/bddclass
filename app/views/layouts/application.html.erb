@@ -7,8 +7,19 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+<h1>My Blog</h1>
+<nav>
+  <ul>
+    <li><%= link_to "New post", new_article_path %></li>
+  </ul>
+</nav>
+<% [:notice, :error].each do |flashtype| %>
+    <div class="<%= flashtype.to_s %>" > 
+        <%= flash[flashtype] %>
+    </div>
+<% end %>
+<div id="content">
+    <%= yield %>
+</div>
 </body>
 </html>
