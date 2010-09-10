@@ -1,7 +1,0 @@
-<div id='articles'>
-  <% @articles.each do |article| %>
-    <div class="article"n>
-      <h2><%= link_to article.title, article  %></h2>
-    </div>
-  <% end %>
-</div>
